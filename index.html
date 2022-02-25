@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Home</title>
+<title>Aritro Nath</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
+
+#small_div {
+  font-size: 4px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  top: 1%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding: 1px;
+}
+
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-dark-grey w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-dark-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="res.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Research</a>
-    <a href="pubs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
-    <a href="code.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Data & Code</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-  </div>
+  <div class="w3-bar w3-blue-gray w3-card w3-left-align w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-wide">ARITRO NATH</a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <div class="w3-right w3-hide-small">
+      <a href="res.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Research</a>
+      <a href="pubs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
+      <a href="code.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Data & Code</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+    </div>  
+   </div>
 
-  <!-- Navbar on small screens -->
+    <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="res.html" class="w3-bar-item w3-button w3-padding-large">Research</a>
     <a href="pubs.html" class="w3-bar-item w3-button w3-padding-large">Publications</a>
@@ -41,59 +65,91 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 
 <!-- Header -->
-<header class="w3-container w3-blue-gray w3-center" style="padding:128px 16px">
+<header class="w3-container w3-white w3-center" style="padding:64px 16px">
+<div class="w3-display-topleft w3-container">
+  <h2>Welcome to my hompage!</h2>
+</div>
 
+<div class="container">
+  <img src="Img/DTLA.png" alt="Downtown Los Angeles at night" style="width=100%; max-width:1200px">
+  <div class="content">
+    <span class="w3-xxlarge">Aritro Nath, PhD </span><br>
+    <span class="w3-large">Computational Biology for Translational Cancer Research </span> 
+  </div>
+
+<div class="w3-container" id=small_div>
+  <p> Downtown Los Angeles at night as seen from Griffith Oservatory, by Camiloarenivar, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>, Desaturated from original </p>
+</div>
 </header>
 
 
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Welcome</h1>
-      <h5 class="w3-padding-32"> I am a geneticist with a background in cancer cell biology, computational biology and pharmacogenomics. I study how tumors originate, evolve and progress over time and how they respond to treatment by studying single-cell and bulk genomics data.  </h5>
-
-      <p class="w3-text-grey"> </p>
-    
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="w3-padding-64 w3-text-red"></i>
-    </div>
+     <h1>Welcome to my homepage!</h1>
+     <h3 class="w3-padding-32"> I am a scientist with a background in cancer cell biology, genetics and bioinformatics. Using single-cell and bulk sequencing data, I study the mechanisms of tumor evolution and drug resistance. I develop data-driven approaches that integrate tumor "omics" with clinical information to identify optimal treatment strategies for individual cancers. </h3>
   </div>
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div class="w3-row-padding w3-container w3-white w3-padding-64">
   <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
+  <h2>Featured publications</h2>
 
-    <div class="w3-twothird">
-      <h1> </h1>
-      <h5 class="w3-padding-32"> </h5>
+   <ul class="w3-ul w3-card-4">
+    <li class="w3-bar">
+      <a href="https://www.nature.com/articles/s41467-021-23171-3">
+      <img src="Img/Logo_ncomm.png" class="w3-bar-item w3-hide-small" style="width:200px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Evolution of core archetypal phenotypes in progressive high grade serous ovarian cancer</span><br>
+        <span class="w3-small">Topics: single cell RNA sequencing (scRNA-seq), NGS, systems biology, machine learning, ovarian cancer</span>
+      </div>
+      </a>
+    </li>
 
-      <p class="w3-text-grey"> </p>
-    </div>
+    <li class="w3-bar">
+      <a href="https://doi.org/10.1073/pnas.1909998116">
+      <img src="Img/Logo_PNAS.png" class="w3-bar-item w3-hide-small" style="width:200px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Discovering long noncoding RNA predictors of anticancer drug sensitivity beyond protein-coding genes</span><br>
+        <span class="w3-small">Topics: drug response prediction, machine learning, pharmacogenomics, long non-coding RNAs (lncRNAs)</span>
+      </div>
+      </a>
+    </li>
+
+    <li class="w3-bar">
+      <a href="https://doi.org/10.1016/j.trecan.2021.01.007">
+      <img src="Img/Logo_Trends.png" class="w3-bar-item w3-hide-small" style="width:200px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Leveraging Single-Cell Approaches in Cancer Precision Medicine</span><br>
+        <span class="w3-small">Review: single-cell sequencing technologies, tumor heterogeneity, clonal evolution, biomarkers, tumor microenvironment</span>
+      </div>
+      </a>
+    </li>
+   
+    <li class="w3-bar">
+      <a href="https://doi.org/10.1158/1541-7786.MCR-19-0480">
+      <img src="Img/Logo_MCR.png" class="w3-bar-item w3-hide-small" style="width:200px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Palmitate-Induced IRE1–XBP1–ZEB Signaling Represses Desmoplakin Expression and Promotes Cancer Cell Migration </span><br>
+        <span class="w3-small">Topics: cancer cell signaling, cell adhesion, migration, ER-stress, palmitate </span>
+      </div>
+      </a>
+    </li>
+  </ul>
   </div>
 </div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge"> </h1>
-</div>
-
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+<footer class="w3-container w3-blue-gray w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xxlarge w3-padding-32">
+    <a href="https://twitter.com/aritromics"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/aritronath/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://github.com/aritronath/"><i class="fa fa-github w3-hover-opacity"></i></a> 
+    <a href="https://scholar.google.com/citations?user=nlbuRRkAAAAJ&hl=en"><i class="fa fa-google w3-hover-opacity"></i></a> 
  </div>
+
  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
