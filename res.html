@@ -14,11 +14,16 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+    
+.responsive {
+  max-width: 100%;
+  max-height: 400px;
+}
+    
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme-d5 w3-card w3-left-align w3-large">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-wide">ARITRO NATH</a>
@@ -43,15 +48,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 
+
 <!-- First Grid -->
 <div class="w3-row-padding  w3-theme-l5 w3-padding-64 w3-container">
   <div class="w3-content">
     <h1> Single-cell genomics and cancer systems biology </h1>
-    <div class="w3-col w3-hide-small w3-center w3-padding-16"> 
-      <img src="Img/Figure_2_R2.png" alt="Nature Comm" style="max-height:400px"> 
+    <div class="w3-col w3-center w3-padding-16"> 
+      <img src="Img/Figure_2_R2.png" alt="Nature Comm" class="responsive"> 
     </div>
     <div class="w3-col w3-left-align">
-      <h3 class="w3-padding-32"> Tumors are composed of a wide diversity of cancer and non-cancerous (normal, stromal, immune) cell populations. Even cancer cells within the same tumor exhibit a range of phenotypes owing to genetic and non-genetic heterogeneity. These properties have implications on both our understanding of how cancer cells originate and progress, and how they evolve over time, especially in response to treatment. Our research aims at characterizing heterogeneity in human cancers and understand their impact on therapeutic response and patient outcomes. We use single-cell RNA-seq (scRNA-seq), bulk RNA-seq, whole exome/whole genome sequencing (WES/WGS) to study tumor evolution. </h3>
+      <h3 class="w3-padding-32"> Tumors are composed of a wide diversity of cancer and non-cancerous (normal, stromal, immune) cell populations. Even cancer cells within the same tumor exhibit a range of phenotypes owing to genetic and non-genetic heterogeneity. These properties have implications on both our understanding of how cancer cells originate and progress, and how they evolve over time, especially in response to treatment. My research aims at characterizing heterogeneity in human cancers and understand their impact on therapeutic response and patient outcomes. I use single-cell RNA-seq (scRNA-seq), bulk RNA-seq, whole exome/whole genome sequencing (WES/WGS) to study tumor evolution. </h3>
 
       <h3 class="w3-padding-32"> I am currently investigating the mechanisms of evolution of drug resistance in breast cancer, especially as they progress from primary to metastatic and refractory states. This work is supported by a pilot grant (PI: Nath) awarded via the US National Cancer Institute grant U54CA209978 </h3> 
 
@@ -64,12 +70,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-white w3-padding-64 w3-container">
   <div class="w3-content">
      <h1> Biomarker discovery and personalized medicine </h1>
-    <div class="w3-col w3-hide-small w3-center w3-padding-16"> 
-      <img src="Img/F1.large.jpg" alt="PNAS" style="max-height:400px">
+    <div class="w3-col w3-center w3-padding-16"> 
+      <img src="Img/F1.large.jpg" alt="PNAS" class="responsive">
     </div>
     
     <div class="w3-col w3-left-align">
-      <h3 class="w3-padding-32">  Whether a tumor may be amenable to a specific treatment, how well it will respond and how soon it might progresses to a resistant state could be determined using the "omic" profile of  a tumor. We leverage transcriptomic, genomic, epigenomic data together with data from pharmacalogical screens and clinical response to develop new drug response prediction models using machine-learning. Using these approaches, we design innovative treatment statification strategies leading to clinical trials that can maximize the probability of therapeutic response in patients.</h3>
+      <h3 class="w3-padding-32">  Whether a tumor may be amenable to a specific treatment, how well it will respond and how soon it might progresses to a resistant state could be determined using the "omic" profile of  a tumor. I leverage transcriptomic, genomic, epigenomic data together with data from pharmacalogical screens and clinical response to develop new drug response prediction models using machine-learning. Using these approaches, we design innovative treatment statification strategies leading to clinical trials that can maximize the probability of therapeutic response in patients.</h3>
 
       <h3 class="w3-padding-32"> I am develeoping a systems biology-guided clinical startification system for advanced and metastatic estrogen receptor positive (ER+) breast cancers. This strategy utilizes a set of biomarkers developed using machine learning to predict response to multiple standard of care treatment available for advanced ER+ breast cancers (patent pending). This strategy will be implemented in a clinical trial <a href="https://www.clinicaltrials.gov/ct2/show/NCT04965688">NCT04965688</a> titled Systems Biology Guided Therapy for Breast Cancer Positive for Oestrogen Receptor After Aromatase Inhibitor and CDK Inhibition or SPOCK.</h3>
 
@@ -83,17 +89,29 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
      <h1> Celullar mechanisms of cancer progression </h1>
     
-    <div class="w3-col w3-hide-small w3-center w3-padding-16"> 
-      <img src="Img/240fig2.jpeg" alt="MCR" style="max-height:400px">
+    <div class="w3-col w3-center w3-padding-16"> 
+      <img src="Img/240fig2.jpeg" alt="MCR" class="responsive">
     </div>
     
     <div class="w3-col w3-left-align">
-      <h3 class="w3-padding-32"> Cancer cells can survive in highly lipotoxic enviroments caused by elevated saturated free-fatty acids. Using cancer cell culture models and public data from large-scale genomic studies, our research found that cancer cells that are high aggressive and invasive can utilize free-fatty acids for sustenance and survival. Moreover, free-fatty acids can trigger activation of transcriptional programs that promote metastasis.</h3>
+      <h3 class="w3-padding-32"> Cancer cells can survive in highly lipotoxic enviroments caused by elevated saturated free-fatty acids. Using cancer cell culture models and public data from large-scale genomic studies, my research found that cancer cells that are high aggressive and invasive can utilize free-fatty acids for sustenance and survival. Moreover, free-fatty acids can trigger activation of transcriptional programs that promote metastasis.</h3>
     </div>
 
   </div>
 </div>
 
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>    
+    
 </body>
 </html>
 

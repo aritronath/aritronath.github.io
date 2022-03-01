@@ -15,11 +15,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 A{text-decoration: none;}
+
+
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme-d5 w3-card w3-left-align w3-large">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-wide">ARITRO NATH</a>
@@ -44,6 +45,7 @@ A{text-decoration: none;}
 </div>
 
 
+
 <!-- Second Grid -->
 <div class="w3-row-padding w3-container w3-white w3-padding-64">
   <div class="w3-content">
@@ -55,18 +57,18 @@ A{text-decoration: none;}
    <ul class="w3-ul w3-card-4">
     <li class="w3-bar">
       <a href="https://github.com/U54Bioinformatics/03A_scRNA_Archetype_Mutitasklearning_Analysis">
-      <img src="Img/GitHub-Mark.png" class="w3-bar-item w3-hide-small" style="width:100px">
+      <img src="Img/GitHub-Mark.png" class="w3-bar-item" style="max-width:75px">
       <div class="w3-bar-item">
-        <span class="w3-large">Scripts for archetype analysis of scRNA-seq data and multitask learning to identify key phenotypes associated with archetypes.</span>
+        <span class="w3-medium">Scripts for archetype analysis and multitask learning with scRNA-seq data to identify key phenotypes.</span>
       </div>
       </a>
     </li>
 
     <li class="w3-bar">
       <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE158722">
-      <img src="Img/geo_main.gif" class="w3-bar-item w3-hide-small" style="width:100px">
+      <img src="Img/geo_main.gif" class="w3-bar-item" style="max-width:75px">
       <div class="w3-bar-item">
-        <span class="w3-large">Single-cell RNA sequencing data from 39 malignant fluid samples from high-grade ovarian cancer patients.</span>
+        <span class="w3-medium">scRNA-seq data from 39 malignant fluid samples from high-grade ovarian cancer patients.</span>
       </div>
       </a>
     </li>
@@ -85,9 +87,9 @@ A{text-decoration: none;}
    <ul class="w3-ul w3-card-4">
     <li class="w3-bar">
       <a href="https://osf.io/s2a5c/">
-      <img src="Img/osf_black.png" class="w3-bar-item w3-hide-small" style="width:100px">
+      <img src="Img/osf_black.png" class="w3-bar-item" style="max-width:75px">
       <div class="w3-bar-item">
-        <span class="w3-large">Scripts and data for identifying novel lncRNA biomarkers of several hundred anticancer drugs across nearly 1000 cell lines.</span>
+        <span class="w3-medium">Scripts and data for identifying novel lncRNA biomarkers of several hundred anticancer drugs across nearly 1000 cell lines.</span>
       </div>
       </a>
     </li>
@@ -107,18 +109,18 @@ A{text-decoration: none;}
    <ul class="w3-ul w3-card-4">
     <li class="w3-bar">
       <a href="https://github.com/aritronath/iMIRAGE">
-      <img src="Img/GitHub-Mark.png" class="w3-bar-item w3-hide-small" style="width:100px">
+      <img src="Img/GitHub-Mark.png" class="w3-bar-item" style="max-width:75px">
       <div class="w3-bar-item">
-        <span class="w3-large">iMIRAGE: an R-package to impute miRNA expression using protein-coding genes.</span>
+        <span class="w3-medium">iMIRAGE: an R-package to impute miRNA expression using protein-coding genes.</span>
       </div>
       </a>
     </li>
 
     <li class="w3-bar">
       <a href="https://aritronath.github.io/iMIRAGE/articles/imirage.html">
-      <img src="Img/GitHub-Mark.png" class="w3-bar-item w3-hide-small" style="width:100px">
+      <img src="Img/GitHub-Mark.png" class="w3-bar-item" style="max-width:75px">
       <div class="w3-bar-item">
-        <span class="w3-large">iMIRAGE vignette and package demo.</span>
+        <span class="w3-medium">iMIRAGE vignette and package demo.</span>
       </div>
       </a>
     </li>
@@ -137,9 +139,9 @@ A{text-decoration: none;}
    <ul class="w3-ul w3-card-4">
     <li class="w3-bar">
       <a href="https://osf.io/s2a5c/">
-      <img src="Img/osf_black.png" class="w3-bar-item w3-hide-small" style="width:100px">
+      <img src="Img/osf_black.png" class="w3-bar-item" style="max-width:75px">
       <div class="w3-bar-item">
-        <span class="w3-large">Scripts and test data associated with imputation of uncharacterized lncRNAs.</span>
+        <span class="w3-medium">Scripts and test data associated with imputation of uncharacterized lncRNAs.</span>
       </div>
       </a>
     </li>
@@ -154,6 +156,17 @@ A{text-decoration: none;}
   </div>
 </div>
 
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>

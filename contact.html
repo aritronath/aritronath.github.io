@@ -16,14 +16,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
 #small_div {
-  font-size: 8px;
+  font-size: 10px;
 }
 
+.responsive {
+  max-width: 100%;
+  max-height: 800px;
+}
+    
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme-d5 w3-card w3-left-align w3-large">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-wide">ARITRO NATH</a>
@@ -50,7 +54,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Header -->
 <header class="w3-container w3-white w3-center">
 <div class="container w3-padding-64">
-  <img src="Img/BRC.png" alt="BRC" style="width=100%; max-width:800px">
+  <img src="Img/BRC.png" alt="BRC" class="responsive">
   <div class="w3-container" id=small_div>
   <p> Biomedical Research Center, City of Hope, Monrovia, CA </p>
 </div>
@@ -77,7 +81,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="https://github.com/aritronath/"><i class="fa fa-github w3-hover-opacity"></i></a> 
     <a href="https://scholar.google.com/citations?user=nlbuRRkAAAAJ&hl=en"><i class="fa fa-google w3-hover-opacity"></i></a> 
  </div>
-</body>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
